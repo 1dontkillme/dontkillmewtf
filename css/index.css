@@ -73,8 +73,10 @@ div.controls button {
 }
 div.controls button i {
     font-size: 34px;
-    color: #3f53bb;
     cursor: pointer;
+}
+div.controls button i:hover {
+    color: #3f53bb;
 }
 input[type="range"] {
     height: 10%;
