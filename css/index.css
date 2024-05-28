@@ -48,6 +48,9 @@ i {
 .fa-github:hover {
     color: #9032ad;
 }
+.fa-telegram:hover {
+    color: #259cd8;
+}
 div.avatar img {
     border: 1px solid black;
     border-radius: 6.25rem;
