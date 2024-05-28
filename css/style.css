@@ -31,9 +31,9 @@ body {
     animation-duration: 40s;
     animation-iteration-count: infinite;
 }
-.mobile-noaccess {
+/* .mobile-noaccess {
     display: none;
-}
+} */
 ::selection {
     background-color: transparent;
     color: inherit;
@@ -52,10 +52,10 @@ body {
         background-position: 0 960px;
     }
 }
-@media screen and (max-width:320px) {
+/* @media screen and (max-width:320px) {
     .mobile-noaccess {
         animation: none;
         display: flex;
         background: black;
     }
-}
+} */
