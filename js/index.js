@@ -8,6 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     audio.volume = 0.07;
 
+    function tryPlayAudio() {
+        const playPromise = audio.play();
+
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                console.log('Audio is playing');
+                playPauseButton.className = 'fas fa-pause-circle'
+            }).catch((error) => {
+                console.log('Audio play was prevented:', error);
+                playPauseButton.className = 'fas fa-play-circle'
+            });
+        }
+    }
+
     playPauseButton.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
@@ -50,4 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
     audio.addEventListener('loadedmetadata', () => {
         durationElement.textContent = formatTime(audio.duration);
     });
+
+    tryPlayAudio();
 });
