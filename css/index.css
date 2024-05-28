@@ -4,7 +4,6 @@ span.nickname {
     font-weight: bold;
     font-size: 4.375rem;
     font-style: normal;
-    color: rgba(240, 248, 255, 0.418);
     transition: color .2s ease-in-out;
 }
 div.container {
@@ -12,6 +11,11 @@ div.container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.616);
+    padding: 2.5rem;
+    backdrop-filter: blur(.1875rem);
 }
 div.social-icons {
     display: flex;
@@ -20,7 +24,6 @@ div.social-icons {
     align-content: center;
     text-align: center;
     justify-content: space-between;
-    color: rgba(240, 248, 255, 0.418);
 }
 span.nickname:hover {
     color: white;
@@ -44,14 +47,6 @@ i {
 }
 .fa-github:hover {
     color: #9032ad;
-}
-.container {
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.616);
-    padding: 2.5rem;
-    color: black;
-    backdrop-filter: blur(.1875rem);
 }
 div.avatar img {
     border: 1px solid black;
@@ -112,4 +107,12 @@ div.controls span {
 button.mute {
     position: relative;
     right: 33%;
+}
+::selection {
+    background-color: transparent;
+    color: inherit;
+}
+::-moz-selection {
+    background-color: transparent;
+    color: inherit;
 }
