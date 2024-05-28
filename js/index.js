@@ -13,11 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (playPromise !== undefined) {
             playPromise.then(() => {
-                console.log('Audio is playing');
+                console.debug('Audio is playing');
                 playPauseButton.className = 'fas fa-pause-circle'
             }).catch((error) => {
-                console.log('Audio play was prevented:', error);
-                playPauseButton.className = 'fas fa-play-circle'
+                console.error('Audio play was prevented:', error);
+                playPauseButton.className = 'fas fa-play-circle';
+                audio.play();
             });
         }
     }
@@ -25,9 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
     playPauseButton.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
+            console.debug('Audio is playing');
             playPauseButton.className = 'fas fa-pause-circle'
         } else {
             audio.pause();
+            console.debug('Audio is paused');
             playPauseButton.className = 'fas fa-play-circle'
         }
     });
