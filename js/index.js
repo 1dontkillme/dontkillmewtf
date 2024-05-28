@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     seekBar.addEventListener('input', () => {
-        const seekTo = (seekbar.value / 100) * audio.duration;
+        const seekTo = (seekBar.value / 100) * audio.duration;
         audio.currentTime = seekTo;
     })
     
