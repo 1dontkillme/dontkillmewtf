@@ -1,11 +1,3 @@
-@keyframes marque {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
 span.nickname {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -14,7 +6,7 @@ span.nickname {
     font-style: normal;
     transition: color .2s ease-in-out;
 }
-div.container {
+div.minecontainer {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,16 +16,6 @@ div.container {
     border: 2px solid rgba(0, 0, 0, 0.616);
     padding: 2.5rem;
     backdrop-filter: blur(.1875rem);
-}
-div.experience-container {
-    width: 30%;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.616);
-    padding: 2.5rem;
-    backdrop-filter: blur(.1875rem);
-    height: fit-content;
-    position: absolute;
 }
 div.social-icons {
     display: flex;
@@ -71,7 +53,7 @@ i {
 }
 div.avatar img {
     border: 1px solid black;
-    border-radius: 6.25rem;
+    border-radius: 30.25rem;
     align-content: center;
     align-items: center;
 }
@@ -127,10 +109,6 @@ div.controls span {
     color: rgba(240, 248, 255, 0.418);
     font-size: 14px;
 }
-button.mute {
-    position: relative;
-    right: 38%;
-}
 ::selection {
     background-color: transparent;
     color: inherit;
@@ -156,66 +134,42 @@ div.headtext {
 ul a {
     color: inherit !important;
 }
-div.marquee-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    position: relative;
-}
-div.marquee ul {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-div.marquee {
-    position: relative;
-    text-align: center;
-    animation: marque 20s linear infinite;
-}
-div.marquee:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-}
-li.skillblock {
-    border: 1px solid grey;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 5px;
-    padding: 10px;
-    background: rgba(128, 128, 128, 0.103);
-    transition: .2s ease-in-out;
-        &.bootstrap:hover {
-            transform: scale(1.1);
-            color: white;
-        }
-        &.css:hover {
-            transform: scale(1.1);
-            color: white;
-        }
-        &.cloudflare:hover {
-            transform: scale(1.1);
-            color: white;
-        }
-        &.html:hover {
-            transform: scale(1.1);
-            color: white;
-        }
-        &.js:hover {
-            transform: scale(1.1);
-            color: white;
-        }
-}
-li.skillblock:hover {
-    background: rgba(128, 128, 128, 0.466);;
-}
-div.marquee li span {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.h6 {
+.h-6 {
     height: 1.5rem;
+}
+.ui-tooltip {
+    background: rgba(0, 0, 0, 0.548) !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    color: white !important;
+    font-size: 1rem !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+div.marquee-container ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+div.marquee-content li {
+    white-space: nowrap;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    background: rgba(128, 128, 128, 0.103);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+div.marquee-content {
+    padding: 7px;
+    border: grey;
+    background: rgba(128, 128, 128, 0.233);
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+}
+div.marquee-content:hover {
+    transform: scale(1.1);
+    background: rgba(128, 128, 128, 0.658);
 }
