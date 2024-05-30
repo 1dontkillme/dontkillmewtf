@@ -1,0 +1,17 @@
+#clock {
+    padding-top: 1rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	width: calc(100vw - 4px);
+	max-width: 300px;
+}
+.info-container {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+    text-align: center;
+}

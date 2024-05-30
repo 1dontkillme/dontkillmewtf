@@ -1,3 +1,14 @@
+@keyframes marque {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-150%);
+    }
+}
+#target {
+    margin-top: 800px; /* Для демонстрации эффекта прокрутки */
+}
 span.nickname {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -16,6 +27,23 @@ div.container {
     border: 2px solid rgba(0, 0, 0, 0.616);
     padding: 2.5rem;
     backdrop-filter: blur(.1875rem);
+}
+div.experience-container {
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.616);
+    padding: 2.5rem;
+    backdrop-filter: blur(.1875rem);
+    height: fit-content;
+    position: absolute;
+    top: 117%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+}
+div.experience-container p {
+    font-weight: 400;
 }
 div.social-icons {
     display: flex;
@@ -120,4 +148,87 @@ button.mute {
 ::-moz-selection {
     background-color: transparent;
     color: inherit;
+}
+div.headtext ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+div.headtext li {
+    font-size: 1.3rem;
+}
+div.headtext {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+ul a {
+    color: inherit !important;
+}
+div.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+}
+div.marquee ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+div.marquee {
+    position: relative;
+    text-align: center;
+    animation: marque 20s linear infinite;
+}
+div.marquee:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+li.skillblock {
+    border: 1px solid grey;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.103);
+    transition: .2s ease-in-out;
+        &.bootstrap:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+        &.css:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+        &.cloudflare:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+        &.html:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+        &.js:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+}
+li.skillblock:hover {
+    background: rgba(128, 128, 128, 0.466);;
+}
+div.marquee li span {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.h6 {
+    height: 1.5rem;
+}
+div.experience-container:hover {
+    color: white;
 }

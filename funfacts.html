@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="dontkillme">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/funfacts.css">
     <script src="https://kit.fontawesome.com/9accee02f9.js" crossorigin="anonymous"></script>
     <style media="all" id="fa-v4-font-face">/*!
         * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
@@ -17,7 +17,7 @@
         * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
         * Copyright 2024 Fonticons, Inc.
         */@font-face{font-family:"Font Awesome 5 Brands";font-display:block;font-weight:400;src:url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.ttf) format("truetype")}@font-face{font-family:"Font Awesome 5 Free";font-display:block;font-weight:900;src:url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.ttf) format("truetype")}@font-face{font-family:"Font Awesome 5 Free";font-display:block;font-weight:400;src:url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.ttf) format("truetype")}</style>
-    <title>dontkillme</title>
+    <title>Fun facts</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
@@ -25,58 +25,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="profile-container" id="profile">
-            <div class="avatar">
-                <img src="./assets/images/avatar.jpg" width="35%">
-            </div>
-            <div class="nickname">
-                <span class="nickname">dontkillme</span>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.youtube.com/channel/UC8QwVfpZz3lL8mRZoajFQqQ" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                <a href="https://discordapp.com/users/531462564304125962" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord" aria-hidden="true"></i></a>
-                <a href="https://steamcommunity.com/profiles/76561198858868268/" target="_blank" rel="noopener noreferrer"><i class="fab fa-steam" aria-hidden="true"></i></a>
-                <a href="https://github.com/1dontkillme" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
-                <a href="https://t.me/m/kZePPo93OTIy" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram" aria-hidden="true"></i></a>
-                <a href="#skills" id="scrollToTarget"><i class="fa fa-cogs" aria-hidden="true"></i></a>
-            </div>
-            <hr>
-            <div class="player">
-                <audio src="./assets/audio/background-music.mp3" id="audio" autoplay preload="auto"></audio>
-                <div class="controls">
-                    <button class="mute"><i class="fa fa-volume-up" aria-hidden="true" id="mute"></i></button>
-                    <button id="play-pause" class="play"><i class="fas fa-pause-circle" aria-hidden="true" id="ppsbutt"></i></button><span id="current-time">0:00</span><input type="range" name="seek" id="seek-bar" value="0"><span id="duration">0:00</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="experience-container" id="skills">
-        <h1>Overall</h1>
-        <p>I've been interested in web development since the age of 15, but never attempted to create websites until I almost 16 because I never knew where to start. By the end of my education, I hope to secure a rewarding job in web development, as it is a lifelong passion of mine.</p>
-        <h2>Skills</h2>
-        <div class="marquee-container">
-            <div class="marquee">
-                <ul>
-                    <a href="https://getbootstrap.com/"><li class="skillblock bootstrap">
-                        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" width="32px" draggable="false" class="h6"> <span>Bootstrap</span>
-                    </li></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><li class="skillblock css">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="32px" draggable="false" alt="" class="h6"> <span>CSS</span>
-                    </li></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><li class="skillblock html">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="32px" draggable="false" alt="" class="h6"> <span>HTML</span>
-                    </li></a>
-                    <a href="https://www.cloudflare.com/"><li class="skillblock cloudflare">
-                        <img src="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/me2uv8xk95n010sdwz.png" width="32px" draggable="false" alt="" class="h6"> <span>Cloudflare</span>
-                    </li></a>
-                    <a href="https://www.javascript.com/"><li class="skillblock js">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="32px" draggable="false" alt="" class="h6"> <span>JavaScript</span>
-                    </li></a>
-                </ul>
-            </div>
+        <div id="clock"></div>
+        <div class="info-container">
+            <h2>System Information</h2>
+            <p id="gpu-info"></p>
+            <p id="cpu-info"></p>
+            <p id="ip-info">Fetching IP address...</p>
         </div>
     </div>
 <script src="./js/main.js"></script>
-<script src="./js/index.js"></script>
+<script src="./js/funfacts.js"></script>
 </body>
 </html>

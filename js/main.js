@@ -4,3 +4,14 @@ console.log('https://discordapp.com/users/531462564304125962')
 function goBack() {
     window.history.back();
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollToTarget = document.getElementById('scrollToTarget');
+    const target = document.getElementById('skills');
+
+    scrollToTarget.addEventListener('click', function(e) {
+        e.preventDefault();
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

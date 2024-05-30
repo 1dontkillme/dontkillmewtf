@@ -26,6 +26,7 @@ body, html {
     background: #555;
 }
 body {
+    scroll-behavior: smooth !important;
     overflow-x: hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(240, 248, 255, 0.712);
@@ -43,9 +44,24 @@ body {
     animation-duration: 40s;
     animation-iteration-count: infinite;
 }
-/* .mobile-noaccess {
-    display: none;
-} */
+a:link {
+    color: #0088cc;
+    background-color: transparent;
+    text-decoration: none;
+    transition: color .3s;
+}
+a:visited {
+    text-decoration: underline;
+}
+a:hover {
+    transition: color .3s;
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
 @keyframes bounce-background {
     from {
         background-position: 0 0px;
@@ -56,10 +72,3 @@ body {
         background-position: 0 960px;
     }
 }
-/* @media screen and (max-width:320px) {
-    .mobile-noaccess {
-        animation: none;
-        display: flex;
-        background: black;
-    }
-} */
