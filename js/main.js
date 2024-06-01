@@ -4,14 +4,16 @@ console.log('https://discordapp.com/users/531462564304125962')
 function goBack() {
     window.history.back();
 }
-document.addEventListener('DOMContentLoaded', function() {
-    const scrollToTarget = document.getElementById('scrollToTarget');
-    const target = document.getElementById('skills');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const scrollToTarget = document.getElementById('scrollToTarget');
+//     const target = document.getElementById('skills');
 
-    scrollToTarget.addEventListener('click', function(e) {
-        e.preventDefault();
-        target.scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+//     scrollToTarget.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         target.scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
