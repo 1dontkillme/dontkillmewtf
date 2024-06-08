@@ -39,6 +39,11 @@ span#visit-count {
     font-weight: 400;
     font-style: normal;
 }
+div.visitcount {
+    align-items: start !important;
+    text-align: start !important;
+    cursor: default;
+}
 .fa-envelope:hover {
     color: hsla(136, 53%, 43%, 1);
 }
@@ -67,8 +72,6 @@ hr {
     border-top: 2px solid #000000;
 }
 .controls {
-    /* display: flex;
-    flex-direction: column; */
     align-items: center;
     width: 100%;
 }
