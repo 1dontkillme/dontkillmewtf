@@ -85,3 +85,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tryPlayAudio();
 });
+
+const button = document.getElementById('more');
+const symbol = document.getElementById('circlebutton');
+
+button.addEventListener('click', function() {
+    if (symbol.classList.contains('fa-plus-circle')) {
+        symbol.classList.remove('fa-plus-circle');
+        symbol.classList.add('fa-minus-circle');
+    } else {
+        symbol.classList.add('fa-plus-circle');
+    }
+});
