@@ -27,4 +27,5 @@ div.container {
     padding: 2.5rem;
     backdrop-filter: blur(.1875rem);
     width: 60%;
+    align-items: center;
 }
