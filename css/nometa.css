@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.h-container {
+    display: flex;
+    padding-bottom: 5rem;
+}
+.dcont {
+    position: relative;
+    top: 5dvh;
+    left: 16dvh;
+    width: 80%;
+}
+.message-card {
+    margin-top: .9375rem;
+    -webkit-box-shadow: 4px 0px 10px 0px rgb(73, 73, 73);
+    -moz-box-shadow: 4px 0px 10px 0px rgb(73, 73, 73);
+    box-shadow: 4px 0px 10px 0px rgb(73, 73, 73);
+    padding: 10px;
+    /* max-width: fit-content; */
+}
+.message-card .message {
+    display: flex;
+    flex-direction: column;
+}
+.avatar {
+    padding: 4px;
+    border-radius: 5px;
+}
+.attributes {
+    display: flex;
+}
+.r-side {
+    width: 50%;
+    margin-top: 1%;
+}
+.s-1 {
+    position: absolute;
+    max-width: fit-content !important;
+    top: 5rem;
+    left: 0.6rem;
+    font-size: 16px;
+}
+.s-2 {
+    position: absolute;
+    font-size: 12px !important;
+    max-width: fit-content !important;
+    top: 7rem;
+    left: 0.6rem;
+    font-size: 16px;
+}
+.h-container p {
+    color: #eee;
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+}
+.h-container p span.typed-text {
+    font-weight: normal;
+    color: #3251dd;
+}
+.h-container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.h-container p span.cursor.typing {
+    animation: none;
+}
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+}
+.btn {
+    background-color: #3251dd;
+    border-color: #3251dd;
+}
+div#alert-success {
+    position: static;
+    width: 100%;
+}
+.id7373 {
+    height: 2.4rem;
+}
+.scalecard {
+    transition: all .2s ease-in-out;
+    transform: scale(0.97,0.97);
+}
+.scalecard:hover {
+    transform: scale(1,1);
+}
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
