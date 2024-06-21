@@ -36,8 +36,8 @@
     </div>
     <div class="button-header-container" style="position: absolute;right: 1rem;top: 1rem;">
         <ul style="list-style-type: none;display: flex;flex-direction: row;gap: 5px;">
-            <li><button class="btn btn-primary customsize bigger" data-bs-toggle="modal" data-bs-target="#info"><i class="fa fa-info-circle" aria-hidden="true"></i></button></li>
-            <li><a href="./" role="button"><button class="btn btn-primary customsize bigger"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button></a></li>
+            <li data-bs-toggle="tooltip" title="About this page"><button class="btn btn-primary customsize bigger" data-bs-toggle="modal" data-bs-target="#info"><i class="fa fa-info-circle" aria-hidden="true"></i></button></li>
+            <li><a href="./" role="button"><button class="btn btn-primary customsize bigger" data-bs-toggle="tooltip" title="Go to main page"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button></a></li>
             <li><button class="btn btn-primary customsize bigger" data-bs-toggle="tooltip" title="Copy link to this page" id="copylink" onclick="copySiteLink()"><i class="fa fa-copy" aria-hidden="true"></i></button></li>
         </ul>
         <div class="modal fade" id="info" tabindex="-1" aria-labelledby="info" aria-hidden="true">
