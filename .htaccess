@@ -1,3 +1,15 @@
+RewriteEngine On
+
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Not authorized
+ErrorDocument 401 ./errors/401.html
+# Page not found
 ErrorDocument 404 ./errors/404.html
+# Access forbidden
 ErrorDocument 403 ./errors/403.html
+# Server crashed
 ErrorDocument 500 ./errors/server.html
+
+Options All -Indexes
