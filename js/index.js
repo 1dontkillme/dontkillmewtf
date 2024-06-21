@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (playPromise !== undefined) {
             playPromise.then(() => {
-                console.debug('Audio is playing');
+                console.warn('DEBUG: Audio is playing');
                 playPauseButton.className = 'fas fa-pause-circle';
             }).catch((error) => {
                 console.error('Audio play was prevented:', error);
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentTime = audio.currentTime;
 
         if (currentTime >= duration) {
-            console.log('Audio was paused because time over')
+            console.warn('DEBUG: Audio was paused because time over')
             audio.pause();
             audio.currentTime = 0;
             playPauseButton.className = 'fas fa-play-circle';
@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     playPauseButton.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
-            console.debug('Audio is playing');
+            console.warn('DEBUG: Audio is playing');
             playPauseButton.className = 'fas fa-pause-circle';
         } else {
             audio.pause();
-            console.debug('Audio is paused');
+            cconsole.warn('DEBUG: Audio is paused');
             playPauseButton.className = 'fas fa-play-circle';
         }
     });
