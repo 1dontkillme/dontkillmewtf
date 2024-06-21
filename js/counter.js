@@ -1,11 +1,11 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyA4EzUlq62OMtkKEnTPT-snpys0PhGYuTU",
-    authDomain: "dontkillmewtf-dd070.firebaseapp.com",
-    projectId: "dontkillmewtf-dd070",
-    storageBucket: "dontkillmewtf-dd070.appspot.com",
-    messagingSenderId: "37436061073",
-    appId: "1:37436061073:web:facff20292f589fcbed630",
-    measurementId: "G-7X9KET0Q6Y"
+    apiKey: "****",
+    authDomain: "****",
+    projectId: "****",
+    storageBucket: "****",
+    messagingSenderId: "****",
+    appId: "****",
+    measurementId: "****"
   };
 
 firebase.initialiseApp(firebaseConfig);
