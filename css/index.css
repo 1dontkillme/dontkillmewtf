@@ -46,9 +46,7 @@ div.minecontainer {
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.616);
     padding: 2.5rem;
-    background: rgba(0, 0, 0, 0.384);
-    /* backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px); */
+    background: rgba(0, 0, 0, 0.253);
 }
 div.social-icons {
     display: flex;
