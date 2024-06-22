@@ -58,6 +58,23 @@ async function getServerInfo() {
     }
 }
 
+function updateLastCommit() {
+    getLastCommitDate();
+    console.log('Last commit date has been updated')
+}
+function updateData() {
+    getUptime();
+    console.log('Uptime date has been updated')
+}
+function updateServerInfo() {
+    getServerInfo();
+    console.log('Server Data has been updated')
+}
+function updateUserIP() {
+    getUserIP();
+    console.log('User IP has been updated')
+}
+
 getLastCommitDate();
 // getUptime();
 getUserIP();
