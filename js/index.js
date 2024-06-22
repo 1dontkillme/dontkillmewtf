@@ -97,3 +97,34 @@ button.addEventListener('click', function() {
         symbol.classList.add('fa-plus-circle');
     }
 });
+
+// async function getMoreInfo(owner, repo, path = null) {
+//     const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+//     const headers = {};
+
+//     try {
+//         const response = await fetch(url, { headers });
+
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}`);
+//         }
+
+//         const data = await response.json();
+
+//         if (data.encoding === 'base64') {
+//             const content = atob(data.content);
+//             document.getElementById('moreinfo').textContent = content;
+//         } else {
+//             document.getElementById('moreinfo').textContent = 'File is not base64 encoded';
+//         }
+//     } catch (error) {
+//         console.error('Error fetching file content:', error);
+//         document.getElementById('moreinfo').textContent = 'Error fetching file content';
+//     }
+// }
+
+// const owner = '1dontkillme';
+// const repo = 'dontkillmewtf';
+// const path = 'moreinfo.md';
+
+// getMoreInfo(owner, repo, path);
