@@ -32,17 +32,17 @@ async function getUserIP() {
     }
 }
 
-async function getUptime() {
-    try {
-        const os = require('os');
-        const upTime = os.uptime();
+// async function getUptime() {
+//     try {
+//         const os = require('os');
+//         const upTime = os.uptime();
         
-        document.getElementById('serverUptime').innerHTML = `Server uptime is ${upTime} seconds`
-    } catch (error) {
-        console.error('Error when get Server Uptime', error);
-        document.getElementById('serverUptime').innerHTML = '<span style="color:red">Critical error when some data parsing. Please, DM site owner.</span>';
-    }
-}
+//         document.getElementById('serverUptime').innerHTML = `Server uptime is ${upTime} seconds`
+//     } catch (error) {
+//         console.error('Error when get Server Uptime', error);
+//         document.getElementById('serverUptime').innerHTML = '<span style="color:red">Critical error when some data parsing. Please, DM site owner.</span>';
+//     }
+// }
 
 async function getServerInfo() {
     try {
@@ -59,6 +59,6 @@ async function getServerInfo() {
 }
 
 getLastCommitDate();
-getUptime();
+// getUptime();
 getUserIP();
 getServerInfo();
