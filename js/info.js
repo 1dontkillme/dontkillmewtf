@@ -37,10 +37,10 @@ async function getUptime() {
         const os = require('os');
         const upTime = os.uptime();
         
-        document.getElementById('serverIp').innerHTML = `Server uptime is ${upTime} seconds`
+        document.getElementById('serverUptime').innerHTML = `Server uptime is ${upTime} seconds`
     } catch (error) {
         console.error('Error when get Server Uptime', error);
-        document.getElementById('userIp').innerHTML = '<span style="color:red">Critical error when some data parsing. Please, DM site owner.</span>';
+        document.getElementById('serverUptime').innerHTML = '<span style="color:red">Critical error when some data parsing. Please, DM site owner.</span>';
     }
 }
 
