@@ -44,6 +44,21 @@ async function getUptime() {
     }
 }
 
+async function getServerInfo() {
+    try {
+        const serverHeader = response.headers.get('Server');
+        const connectionHeader = response.headers.get('Connection')
+
+        document.getElementById('serverStatus').innerHTML = `Server Status: ${serverHeader}`;
+        document.getElementById('connectionStatus').innerHTML = `Connection Status: ${connectionHeader}`;
+    } catch (error) {
+        console.error('Error when get getServerInfo', error);
+        document.getElementById('serverStatus').innerHTML = '<span style="color:red">Critical error when some data parsing. Please, DM site owner.</span>';
+        document.getElementById('connectionStatus').innerHTML = '<span style="color:red">Critical error when some data parsing. Please, DM site owner.</span>';
+    }
+}
+
 getLastCommitDate();
 getUptime();
 getUserIP();
+getServerInfo();
