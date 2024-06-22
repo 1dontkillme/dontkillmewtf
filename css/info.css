@@ -1,0 +1,14 @@
+body {
+    color: white;
+}
+div.container {
+    display: flex;
+    flex-direction: row;
+    columns: 2;
+    gap: .75rem;
+}
+div.siteinfo, div.userinfo {
+    background: black;
+    padding: .625rem;
+    width: 50%;
+}

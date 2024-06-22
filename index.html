@@ -67,9 +67,7 @@
                 <img src="./assets/images/avatar.jpg" width="35%" class="rounded-circle">
             </div>
             <div class="nickname">
-                <span class="nickname">dontkillme</span>&nbsp;
-                <span class="nickname-1">aka</span>
-                <span class="nickname-1">0xday</span>
+                <span class="nickname">dontkillme</span>
             </div>
             <div class="social-icons">
                 <a href="https://www.youtube.com/channel/UC8QwVfpZz3lL8mRZoajFQqQ" target="_blank" rel="noopener noreferrer" class="youtube" aria-describedby="tooltip youtube" data-bs-toggle="tooltip" title="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
@@ -82,6 +80,7 @@
             <div class="player">
                 <audio src="./assets/audio/background-music.mp3" id="audio" autoplay preload="auto"></audio>
                 <div class="controls">
+                    <a href="./api/info.html"><button type="button" id="siteInfo" data-bs-toggle="tooltip" title="About this site"><i class="bi bi-info-circle"></i></button></a>
                     <button type="button" id="liveToastBtn" data-bs-toggle="tooltip" title="Why music didn't start automatically?"><i class="bi bi-question-circle"></i></button>
                     <button class="mute" data-bs-toggle="tooltip" title="Mute music"><i class="fa fa-volume-up" aria-hidden="true" id="mute"></i></button>
                     <button id="play-pause" class="play" data-bs-toggle="tooltip" title="Play or Pause music"><i class="fas fa-pause-circle" aria-hidden="true" id="ppsbutt"></i></button><span id="current-time">0:00</span><input type="range" name="seek" id="seek-bar" value="0"><span id="duration">0:00</span>
@@ -144,7 +143,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="./js/script.js"></script>
 <script src="./js/index.js"></script>
-<script src="./assets/translations/indexTranslations.js"></script>
+<script src="./assets/translations/index.js"></script>
 <script src="./assets/js/snippets.js"></script>
 </body>
 </html>
